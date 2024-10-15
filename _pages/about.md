@@ -18,4 +18,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
+**About me**
+
 I am currently a PhD student at ARClab in College of Computer Science and Technology of Zhejiang University, under the supervision of Professor [Wenzhi Chen](https://person.zju.edu.cn/chenwenzhi). Prior to this, I graduated in 2019 with a Bachelor's degree in Computer Science and Technology from Xidian University. My research primarily focuses on high-performance storage, next-generation intelligent system architecture, and hardware-software co-design.
+
+**Research Interest**
