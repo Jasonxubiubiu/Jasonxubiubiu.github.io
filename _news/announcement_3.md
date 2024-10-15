@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper was accepted by Systor'24 :sparkles:
+One paper was accepted by Systor 2024! :sparkles:
