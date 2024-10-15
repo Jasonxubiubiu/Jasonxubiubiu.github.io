@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+One paper was accpeted by HPCA 2024! :sparkles:
