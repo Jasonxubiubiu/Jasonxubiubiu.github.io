@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper was accpeted by Systor'24. :sparkles: 
+A simple inline announcement with Markdown emoji! :sparkles: :smile:
