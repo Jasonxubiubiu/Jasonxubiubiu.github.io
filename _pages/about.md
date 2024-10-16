@@ -6,7 +6,7 @@ subtitle: <a href='http://arc.zju.edu.cn/'>ARClab</a>. Zhejiang University.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: photo.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Caoxi Building 401</p>
