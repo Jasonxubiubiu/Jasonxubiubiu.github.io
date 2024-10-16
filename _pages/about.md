@@ -29,4 +29,7 @@ I am currently a PhD student at ARClab in College of Computer Science and Techno
   + NVMe over Fabrics Optimization   
 
 * Software/hardware Co-design
-  + DPU/FPGA/ARM SoC Offloading.
+  + DPU/FPGA/ARM SoC Offloading
+
+* Microarchitecture
+  + CPU Prefetching
