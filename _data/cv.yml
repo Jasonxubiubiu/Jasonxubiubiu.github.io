@@ -41,5 +41,12 @@
 - title: Other Interests
   type: list
   contents:
-    - Sports: Triathlon, Road Cycling, Swimming, Marathon.
-    - Hobbies: Travel.
+    - name: Sports
+      items: 
+        - Triathlon
+        - Road Cycling
+        - Swimming
+        - Marathon
+    - name: Hobbies
+      items: 
+        - Travel.
