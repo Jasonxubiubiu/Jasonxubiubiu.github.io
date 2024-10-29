@@ -41,12 +41,12 @@
 - title: Other Interests
   type: list
   contents:
-    - name: Sports
+    - name: "Sports"
       items: 
-        - Triathlon
-        - Road Cycling
-        - Swimming
-        - Marathon
-    - name: Hobbies
+        - "Triathlon"
+        - "Road Cycling"
+        - "Swimming"
+        - "Marathon"
+    - name: "Hobbies"
       items: 
-        - Travel.
+        - "Travel"
