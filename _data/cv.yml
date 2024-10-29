@@ -28,15 +28,15 @@
         - Description 1.
         - Description 2.
 
--title: Work
- type: time_table
- contents:
-   - title: Engineer Intern
-     institution: Alibaba Group
-     year: 2021.6 - Today
-   - title: Field Application Engineer Intern
-     institution: Texas Instruments
-     year: 2019.10 - 2020.5
+- title: Work
+  type: time_table
+  contents:
+    - title: Engineer Intern
+      institution: Alibaba Group
+      year: 2021.6 - Today
+    - title: Field Application Engineer Intern
+      institution: Texas Instruments
+      year: 2019.10 - 2020.5
 
 - title: Other Interests
   type: list
