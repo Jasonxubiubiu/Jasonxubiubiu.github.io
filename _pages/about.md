@@ -20,9 +20,13 @@ social: true # includes social icons at the bottom of the page
 
 **About me**
 
-I am currently a PhD student at ARClab in College of Computer Science and Technology of Zhejiang University, under the supervision of Professor [Wenzhi Chen](https://person.zju.edu.cn/chenwenzhi). Prior to this, I graduated in 2019 with a Bachelor's degree in Computer Science and Technology from Xidian University. My research primarily focuses on high-performance storage, next-generation intelligent system architecture, and hardware-software co-design.
+I received my Ph.D. from the College of Computer Science and Technology at Zhejiang University in April 2026, under the supervision of Professor [Wenzhi Chen](https://person.zju.edu.cn/chenwenzhi). Prior to this, I received my Bachelor's degree in Computer Science and Technology from Xidian University in 2019. I am currently a postdoctoral researcher and an intelligent algorithm engineer at [Zhejiang Huaray Technology Co., Ltd.](https://www.irayple.com/en/home/) My research interests include embodied intelligence, large language model applications, vision-language-action models, high-performance storage, next-generation intelligent system architectures, and hardware-software co-design.
 
 **Research Interest**
+* Embodied Intelligence
+  + Large Language Model (LLM) Applications
+  + Vision-Language-Action (VLA) Models
+
 * High Performance NVMe Storage
   + NVMe Virtualization
   + Local NVMe Storage Pool
