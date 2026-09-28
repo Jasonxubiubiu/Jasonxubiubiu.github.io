@@ -3,6 +3,8 @@ layout: about
 title: about
 permalink: /
 subtitle: <a href='http://arc.zju.edu.cn/'>ARClab</a>. Zhejiang University.
+description: Jiexiong Xu (徐杰雄) is a postdoctoral researcher and intelligent algorithm engineer specializing in embodied intelligence, LLM applications, VLA models, and high-performance systems.
+keywords: Jiexiong Xu, 徐杰雄, embodied intelligence, LLM applications, VLA models, high-performance systems
 
 profile:
   align: right

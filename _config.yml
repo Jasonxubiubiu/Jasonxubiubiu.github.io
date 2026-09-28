@@ -8,12 +8,12 @@ middle_name:
 last_name:
 email: jasonxu@zju.edu.cn
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Jiexiong Xu's homepage.
+  Jiexiong Xu (徐杰雄) is a postdoctoral researcher and intelligent algorithm engineer working on embodied intelligence, large language model applications, vision-language-action models, and high-performance systems.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: Jiexiong Xu, 徐杰雄, embodied intelligence, large language models, LLM applications, vision-language-action models, VLA, high-performance storage, Zhejiang University, Zhejiang Huaray Technology
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -63,9 +63,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://jasonxubiubiu.github.io/assets/img/photo.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -78,7 +78,7 @@ dblp_url: # your DBLP profile url
 discord_id: # your discord id (18-digit unique numerical identifier)
 facebook_id: # your facebook id
 flickr_id: # your flickr id
-github_username: # your GitHub user name
+github_username: Jasonxubiubiu # your GitHub user name
 gitlab_username: # your GitLab user name
 ieee_id: # your ieeexplore.ieee.org/author/id
 inspirehep_id: # Inspire HEP author ID
@@ -275,6 +275,14 @@ plugins:
 defaults:
   - scope:
       path: "assets"
+    values:
+      sitemap: false
+  - scope:
+      path: "_posts"
+    values:
+      sitemap: false
+  - scope:
+      path: "_projects"
     values:
       sitemap: false
 

@@ -43,6 +43,9 @@
 {% if page.keywords or site.keywords %}
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
 {% endif %}
+{% if page.sitemap == false %}
+  <meta name="robots" content="noindex, follow">
+{% endif %}
 
 {% assign is_blog_post = false %}
 {% if page.url != '/blog/index.html' and page.url contains '/blog/' %}
@@ -216,26 +219,66 @@
     {% capture link %}https://www.zotero.org/{{ site.zotero_username }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
-  {% if sameaslinks != blank %}
-    {% assign sameaslinks = sameaslinks | split: '' %}
-  {% endif %}
+  {% assign clean_author_name = author_name | strip %}
+  {% capture metadata_description %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
 
   <script type="application/ld+json">
-    {
-        "author":
-        {
-            "@type": "Person",
-            "name": "{{ author_name }}"
-        },
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
-        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
-        "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
-        {% if sameaslinks != blank %}
-        "sameAs": {{ sameaslinks }},
-        {% endif %}
-        "name": "{{ author_name }}",
-        "@context": "https://schema.org"
-    }
+    {% if page.url == '/' %}
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "@id": {{ '/#profile' | absolute_url | jsonify }},
+        "url": {{ page.url | absolute_url | jsonify }},
+        "name": {{ clean_author_name | jsonify }},
+        "description": {{ metadata_description | strip | jsonify }},
+        "mainEntity": {
+          "@type": "Person",
+          "@id": {{ '/#person' | absolute_url | jsonify }},
+          "name": {{ clean_author_name | jsonify }},
+          "alternateName": "徐杰雄",
+          "url": {{ page.url | absolute_url | jsonify }},
+          "image": {{ site.og_image | jsonify }},
+          "jobTitle": ["Postdoctoral Researcher", "Intelligent Algorithm Engineer"],
+          "affiliation": [
+            {
+              "@type": "Organization",
+              "name": "Zhejiang University",
+              "url": "https://www.zju.edu.cn/english/"
+            },
+            {
+              "@type": "Organization",
+              "name": "Zhejiang Huaray Technology Co., Ltd.",
+              "url": "https://www.irayple.com/en/home/"
+            }
+          ],
+          "alumniOf": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Zhejiang University"
+            },
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Xidian University"
+            }
+          ]{% if sameaslinks != blank %},
+          "sameAs": {{ sameaslinks | jsonify }}{% endif %}
+        }
+      }
+    {% else %}
+      {
+        "@context": "https://schema.org",
+        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebPage{% endif %}",
+        "url": {{ page.url | absolute_url | jsonify }},
+        "name": {% if page.title %}{{ page.title | jsonify }}{% else %}{{ clean_author_name | jsonify }}{% endif %},
+        "headline": {% if page.title %}{{ page.title | jsonify }}{% else %}{{ clean_author_name | jsonify }}{% endif %},
+        "description": {{ metadata_description | strip | jsonify }},
+        "author": {
+          "@type": "Person",
+          "@id": {{ '/#person' | absolute_url | jsonify }},
+          "name": {{ clean_author_name | jsonify }}{% if sameaslinks != blank %},
+          "sameAs": {{ sameaslinks | jsonify }}{% endif %}
+        }
+      }
+    {% endif %}
   </script>
 {% endif %}
