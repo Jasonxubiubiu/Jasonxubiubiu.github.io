@@ -20,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 
 **About me**
 
-I received my Ph.D. from the College of Computer Science and Technology at Zhejiang University in April 2026, under the supervision of Professor [Wenzhi Chen](https://person.zju.edu.cn/chenwenzhi). Prior to this, I received my Bachelor's degree in Computer Science and Technology from Xidian University in 2019. I am currently a postdoctoral researcher and an intelligent algorithm engineer at [Zhejiang Huaray Technology Co., Ltd.](https://www.irayple.com/en/home/) My research interests include embodied intelligence, large language model applications, vision-language-action models, high-performance storage, next-generation intelligent system architectures, and hardware-software co-design.
+I am currently a postdoctoral researcher in a joint program between Zhejiang University and [Zhejiang Huaray Technology Co., Ltd.](https://www.irayple.com/en/home/), where I also work as an intelligent algorithm engineer. I received my Ph.D. in Computer Science and Technology from Zhejiang University in April 2026 under the supervision of Professor [Wenzhi Chen](https://person.zju.edu.cn/chenwenzhi). Prior to that, I received my Bachelor's degree in Computer Science and Technology from Xidian University in 2019. My research interests span embodied intelligence, large language model applications, vision-language-action models, high-performance storage, next-generation intelligent system architectures, and hardware-software co-design.
 
 **Research Interest**
 * Embodied Intelligence
