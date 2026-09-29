@@ -222,6 +222,19 @@
   {% assign clean_author_name = author_name | strip %}
   {% capture metadata_description %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
 
+  {% if page.url == '/' %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": {{ '/#website' | absolute_url | jsonify }},
+        "url": {{ '/' | absolute_url | jsonify }},
+        "name": "Jiexiong Xu",
+        "alternateName": ["徐杰雄", "jasonxubiubiu.github.io"]
+      }
+    </script>
+  {% endif %}
+
   <script type="application/ld+json">
     {% if page.url == '/' %}
       {

@@ -15,7 +15,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: Jiexiong Xu, 徐杰雄, embodied intelligence, large language models, LLM applications, vision-language-action models, VLA, high-performance storage, Zhejiang University, Zhejiang Huaray Technology
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon.png # image file in /assets/img/ used as the browser and search-result favicon
 
 url: https://Jasonxubiubiu.github.io # the base hostname & protocol for your site
 baseurl:
